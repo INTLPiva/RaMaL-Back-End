@@ -20,3 +20,10 @@ model Pdf {
   data   Bytes
   userId String
 }
+
+model Caregiver {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  token String
+  userId String
+}
